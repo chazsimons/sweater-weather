@@ -1,0 +1,50 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/mapquest_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/mapquest_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/location.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1642274885
+  }
+}

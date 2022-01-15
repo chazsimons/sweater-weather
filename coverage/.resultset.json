@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/hourly_weather.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
         "lines": [
           1,
           1,
@@ -9,11 +9,17 @@
           null,
           null,
           null,
+          null,
+          null,
+          null,
           1,
-          96,
-          96,
-          96,
-          96,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
           null,
           null
         ]
@@ -91,7 +97,7 @@
           null
         ]
       },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/hourly_weather.rb": {
         "lines": [
           1,
           1,
@@ -99,22 +105,16 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
           1,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
+          96,
+          96,
+          96,
+          96,
           null,
           null
         ]
       }
     },
-    "timestamp": 1642284327
+    "timestamp": 1642285559
   }
 }

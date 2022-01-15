@@ -1,32 +1,79 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/mapquest_facade.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/weather_facade.rb": {
         "lines": [
           1,
           null,
-          1,
-          4,
-          4,
-          4,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          48,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/spec/poros/location_spec.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/current_weather.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
-          null,
-          null,
           1,
           1,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -34,61 +81,36 @@
           null
         ]
       },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/location.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
         "lines": [
           1,
-          1,
-          null,
           null,
           1,
-          4,
-          4,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
           null,
           null
         ]
       },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/spec/services/mapquest_service_spec.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/hourly_weather.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/mapquest_service.rb": {
-        "lines": [
-          1,
-          1,
-          6,
-          null,
-          null,
-          1,
-          5,
-          5,
-          5,
-          null,
-          5,
+          48,
+          48,
+          48,
+          48,
           null,
           null
         ]
       }
     },
-    "timestamp": 1642275927
+    "timestamp": 1642281052
   }
 }

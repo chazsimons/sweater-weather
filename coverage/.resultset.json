@@ -1,0 +1,120 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/weather_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          2,
+          null,
+          2,
+          16,
+          null,
+          null,
+          2,
+          96,
+          null,
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/current_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/hourly_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          96,
+          96,
+          96,
+          96,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1642285559
+  }
+}

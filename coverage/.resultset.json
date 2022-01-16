@@ -1,33 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/api/v1/backgrounds_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/backgrounds_facade.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/background_service.rb": {
         "lines": [
           1,
@@ -37,41 +10,18 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/background.rb": {
-        "lines": [
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1642364626
+    "timestamp": 1642365389
   }
 }

@@ -6,11 +6,11 @@ RSpec.describe CurrentWeather do
   end
 
   it 'exists', :vcr do
-    expect(@weather[:current]).to be_an_instance_of(CurrentWeather)
+    expect(@weather[:current_weather]).to be_an_instance_of(CurrentWeather)
   end
 
   it 'has readable attributes', :vcr do
-    expected = @weather[:current]
+    expected = @weather[:current_weather]
 
     expect(expected.sunrise).to eq('Sat, 15 Jan 2022 06:50:41 -0800')
     expect(expected.sunset).to eq('Sat, 15 Jan 2022 16:48:57 -0800')

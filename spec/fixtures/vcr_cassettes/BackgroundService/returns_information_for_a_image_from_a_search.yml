@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=ZHesXhc8C7qYFzqF_h3w5tt2ij4_jgFv4VlIiNGWIlU&orientation=landscape&page=1&per_page=1&query=denver,cocity
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1161'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      X-Unsplash-Version:
+      - v1
+      Etag:
+      - W/"29199d49456ec839176404765649fcbd"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '45'
+      X-Request-Id:
+      - 86cb80ce-047a-42ba-8c73-eea2c19a9f93
+      X-Runtime:
+      - '0.038288'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 16 Jan 2022 20:34:55 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kjyo7100137-IAD, cache-sna10720-LGB
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1642365295.162748,VS0,VE318
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1rGL9mRybP0","created_at":"2021-06-08T13:36:20-04:00","updated_at":"2022-01-16T15:19:29-05:00","promoted_at":null,"width":4290,"height":3218,"color":"#404040","blur_hash":"L8C?P_%N0ism4mxVRkxv%gRjnNMx","description":null,"alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1623173651777-e013ac17e563?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1623173651777-e013ac17e563?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1623173651777-e013ac17e563?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1623173651777-e013ac17e563?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1623173651777-e013ac17e563?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/1rGL9mRybP0","html":"https://unsplash.com/photos/1rGL9mRybP0","download":"https://unsplash.com/photos/1rGL9mRybP0/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU","download_location":"https://api.unsplash.com/photos/1rGL9mRybP0/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjUyOTU"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"gTD8WhWT4J0","updated_at":"2022-01-14T23:20:54-05:00","username":"melickphotography","name":"Richard
+        Melick","first_name":"Richard","last_name":"Melick","twitter_username":null,"portfolio_url":"https://www.melickphotography.com","bio":"I
+        am a creative photographer based out of the Rocky Mountains. A trained journalist
+        and storyteller, I have traveled all over the world, striving to photograph
+        unique moments that draw the viewer in.","location":"Denver, CO","links":{"self":"https://api.unsplash.com/users/melickphotography","html":"https://unsplash.com/@melickphotography","photos":"https://api.unsplash.com/users/melickphotography/photos","likes":"https://api.unsplash.com/users/melickphotography/likes","portfolio":"https://api.unsplash.com/users/melickphotography/portfolio","following":"https://api.unsplash.com/users/melickphotography/following","followers":"https://api.unsplash.com/users/melickphotography/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1622985588843-960dad65b620image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1622985588843-960dad65b620image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1622985588843-960dad65b620image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"rmelick","total_collections":0,"total_likes":0,"total_photos":23,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"rmelick","portfolio_url":"https://www.melickphotography.com","twitter_username":null,"paypal_email":null}},"exif":{"make":null,"model":null,"name":null,"exposure_time":null,"aperture":null,"focal_length":null,"iso":null},"location":{"title":"Denver,
+        CO, USA","name":"Denver, CO, USA","city":"Denver","country":"United States","position":{"latitude":39.739236,"longitude":-104.990251}},"views":1773,"downloads":17}'
+  recorded_at: Sun, 16 Jan 2022 20:34:55 GMT
+recorded_with: VCR 6.0.0

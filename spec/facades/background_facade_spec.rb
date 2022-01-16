@@ -10,7 +10,7 @@ RSpec.describe BackgroundsFacade do
   end
 
   it 'has readable attributes', :vcr do
-    expect(@background.location).to eq("Downtown Denver, CO, USA")
+    expect(@background.location).to eq("Downtown Denver, Denver, CO, USA")
     expect(@background.image_url).to eq("https://images.unsplash.com/photo-1626157854457-df0cd78d0c52?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjMxOTc&ixlib=rb-1.2.1")
     expect(@background.credits).to be_a(Hash)
     expect(@background.credits[:author]).to eq('selbotron')

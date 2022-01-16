@@ -1,25 +1,62 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/facades/mapquest_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/services/mapquest_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/location.rb": {
         "lines": [
           1,
           1,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
+          1,
+          1,
           null,
           null
         ]
@@ -28,23 +65,23 @@
         "lines": [
           1,
           1,
-          2,
+          1,
           null,
-          2,
+          1,
           null,
-          2,
-          16,
-          null,
-          null,
-          2,
-          96,
+          1,
+          8,
           null,
           null,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          48,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -53,17 +90,17 @@
         "lines": [
           1,
           1,
-          2,
+          1,
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          2,
+          1,
           null,
           null
         ]
@@ -83,16 +120,39 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/poros/daily_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
           null,
           null
         ]
@@ -106,15 +166,15 @@
           null,
           null,
           1,
-          96,
-          96,
-          96,
-          96,
+          48,
+          48,
+          48,
+          48,
           null,
           null
         ]
       }
     },
-    "timestamp": 1642285559
+    "timestamp": 1642300307
   }
 }

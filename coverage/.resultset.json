@@ -6,20 +6,24 @@
           1,
           null,
           1,
-          1,
-          0,
-          0,
+          4,
+          3,
+          3,
+          2,
           null,
           1,
           null,
           null,
+          1,
+          null,
+          null,
           null,
           1,
           null,
           1,
-          0,
-          0,
-          0,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -47,8 +51,16 @@
           1,
           null
         ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1642373329
+    "timestamp": 1642374518
   }
 }

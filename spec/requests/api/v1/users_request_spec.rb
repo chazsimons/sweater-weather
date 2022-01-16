@@ -24,4 +24,18 @@ RSpec.describe 'Users Request' do
     expect(response.status).to eq(400)
     expect(parsed[:details]).to eq('Your passwords do not match. Please try again.')
   end
+
+  it 'returns a 400 code if validations fail' do
+    headers = { 'CONTENT_TYPE' => 'application/json' }
+    user_params = { email: 'johndoe123@gmail.com', password: 'password', password_confirmation: 'password' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
+
+    user_2_params = { email: 'johndoe123@gmail.com', password: 'password', password_confirmation: 'password' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(user_2_params)
+
+    parsed_errors = JSON.parse(response.body, symbolize_names: true)[:errors]
+
+    expect(response.status).to eq(400)
+    expect(parsed_errors[:details][:email][0]).to eq("has already been taken")
+  end
 end

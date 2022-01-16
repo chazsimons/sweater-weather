@@ -14,5 +14,14 @@ RSpec.describe 'Users Request' do
     expect(new_user.email).to eq(user_params[:email])
   end
 
+  it 'returns a 400 status if it cannot register a user' do
+    headers = { 'CONTENT_TYPE' => 'application/json' }
+    user_params = { email: 'johndoe123@gmail.com', password: 'password', password_confirmation: 'wrong_password' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
 
+    parsed = JSON.parse(response.body, symbolize_names: true)[:errors]
+
+    expect(response.status).to eq(400)
+    expect(parsed[:details]).to eq('Your passwords do not match. Please try again.')
+  end
 end

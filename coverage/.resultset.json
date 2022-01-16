@@ -1,6 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/models/user.rb": {
         "lines": [
           1,
@@ -18,8 +43,16 @@
           1,
           null
         ]
+      },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1642367693
+    "timestamp": 1642371818
   }
 }

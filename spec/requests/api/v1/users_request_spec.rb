@@ -10,5 +10,9 @@ RSpec.describe 'Users Request' do
     expect(response).to be_successful
     expect(response.status).to eq(201)
 
+    new_user = User.last
+    expect(new_user.email).to eq(user_params[:email])
   end
+
+
 end

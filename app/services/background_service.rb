@@ -6,7 +6,7 @@ class BackgroundService
 
   def self.get_photo(city)
     conn.get('photos/random') do |req|
-      req.params[:query]       = city
+      req.params[:query]       = city + 'city'
       req.params[:client_id]   = ENV['unsplash_access_key']
       req.params[:orientation] = 'landscape'
       req.params[:page]        = 1

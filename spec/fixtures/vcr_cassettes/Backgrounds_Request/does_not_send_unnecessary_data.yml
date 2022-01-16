@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=ZHesXhc8C7qYFzqF_h3w5tt2ij4_jgFv4VlIiNGWIlU&orientation=landscape&page=1&per_page=1&query=denver,cocity
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1178'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      X-Unsplash-Version:
+      - v1
+      Etag:
+      - W/"88ee44f96a48be876abe30dd3da6db28"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Request-Id:
+      - a6bd0dde-81c1-4211-89f9-ac57ee421f89
+      X-Runtime:
+      - '0.046109'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 16 Jan 2022 20:23:46 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kcgs7200178-IAD, cache-lax10642-LGB
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1642364627.519279,VS0,VE109
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"6MfYK3PxghY","created_at":"2020-12-12T09:57:16-05:00","updated_at":"2022-01-16T12:16:21-05:00","promoted_at":null,"width":4032,"height":2268,"color":"#735959","blur_hash":"LMHnparY8|?u01n%oJWB56b^%fIA","description":"The
+        Blue Silo studio entrance. Many artists work here and have their private studios.
+        ","alt_description":"white wooden door beside brown brick wall","urls":{"raw":"https://images.unsplash.com/photo-1607785033190-be2f6443ddc0?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1607785033190-be2f6443ddc0?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1607785033190-be2f6443ddc0?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1607785033190-be2f6443ddc0?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1607785033190-be2f6443ddc0?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/6MfYK3PxghY","html":"https://unsplash.com/photos/6MfYK3PxghY","download":"https://unsplash.com/photos/6MfYK3PxghY/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY","download_location":"https://api.unsplash.com/photos/6MfYK3PxghY/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjQ2MjY"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"yCqie8LKrrA","updated_at":"2020-12-13T23:01:54-05:00","username":"jive_turkey","name":"Michael
+        C. Gadlin","first_name":"Michael C.","last_name":"Gadlin","twitter_username":null,"portfolio_url":null,"bio":null,"location":null,"links":{"self":"https://api.unsplash.com/users/jive_turkey","html":"https://unsplash.com/@jive_turkey","photos":"https://api.unsplash.com/users/jive_turkey/photos","likes":"https://api.unsplash.com/users/jive_turkey/likes","portfolio":"https://api.unsplash.com/users/jive_turkey/portfolio","following":"https://api.unsplash.com/users/jive_turkey/following","followers":"https://api.unsplash.com/users/jive_turkey/followers"},"profile_image":{"small":"https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":null,"total_collections":0,"total_likes":24,"total_photos":2,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":null,"portfolio_url":null,"twitter_username":null,"paypal_email":null}},"exif":{"make":"Apple","model":"iPhone
+        12 Pro Max","name":"Apple, iPhone 12 Pro Max","exposure_time":"1/696","aperture":"1.4","focal_length":"5.1","iso":32},"location":{"title":"4701
+        National Western Dr, Denver, United States","name":"4701 National Western
+        Dr, Denver, United States","city":"Denver","country":"United States","position":{"latitude":39.782421670000005,"longitude":-104.97405333}},"views":1845,"downloads":7}'
+  recorded_at: Sun, 16 Jan 2022 20:23:46 GMT
+recorded_with: VCR 6.0.0

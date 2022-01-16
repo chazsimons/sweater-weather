@@ -6,11 +6,11 @@ RSpec.describe DailyWeather do
   end
 
   it 'exists', :vcr do
-    expect(@weather[:daily].first).to be_an_instance_of(DailyWeather)
+    expect(@weather[:daily_weather].first).to be_an_instance_of(DailyWeather)
   end
 
   it 'has readable attributes', :vcr do
-    expected = @weather[:daily][1]
+    expected = @weather[:daily_weather][1]
 
     expect(expected.date).to eq('Sun, 16 Jan 2022 11:00:00 -0800')
     expect(expected.sunrise).to eq('Sun, 16 Jan 2022 06:50:22 -0800')

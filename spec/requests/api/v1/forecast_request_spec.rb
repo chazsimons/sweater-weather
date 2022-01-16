@@ -10,6 +10,7 @@ RSpec.describe 'forecast requests' do
     forecast = JSON.parse(response.body, symbolize_names: true)[:data][:attributes]
 
     expect(forecast[:current_weather]).to have_key(:datetime)
+    
     expect(forecast[:current_weather]).to have_key(:sunrise)
     expect(forecast[:current_weather]).to have_key(:sunset)
     expect(forecast[:current_weather]).to have_key(:temp)

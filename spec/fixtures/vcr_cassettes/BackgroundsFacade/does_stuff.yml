@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=ZHesXhc8C7qYFzqF_h3w5tt2ij4_jgFv4VlIiNGWIlU&orientation=landscape&page=1&per_page=1&query=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1303'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      X-Unsplash-Version:
+      - v1
+      Etag:
+      - W/"d7e607b063a22af78b5608942ec6ae87"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Request-Id:
+      - 68918568-8a2b-4f4c-a5e4-a0f95d45bdb8
+      X-Runtime:
+      - '0.038908'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 16 Jan 2022 19:05:43 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kcgs7200057-IAD, cache-lax10656-LGB
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1642359944.592734,VS0,VE103
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"_6Vs6v8PfW4","created_at":"2020-09-16T12:32:48-04:00","updated_at":"2022-01-16T08:14:25-05:00","promoted_at":null,"width":5568,"height":3712,"color":"#262626","blur_hash":"LE8gy-WB00WB_3ay9FRjRjofofWB","description":"Denver''s
+        DAIRY BLOCK.","alt_description":"grayscale photo of a building with light","urls":{"raw":"https://images.unsplash.com/photo-1600273813352-73e7922bfb83?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1600273813352-73e7922bfb83?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1600273813352-73e7922bfb83?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1600273813352-73e7922bfb83?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1600273813352-73e7922bfb83?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/_6Vs6v8PfW4","html":"https://unsplash.com/photos/_6Vs6v8PfW4","download":"https://unsplash.com/photos/_6Vs6v8PfW4/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM","download_location":"https://api.unsplash.com/photos/_6Vs6v8PfW4/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNTk5NDM"},"categories":[],"likes":7,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"street-photography":{"status":"rejected"}},"user":{"id":"VCnPGG-Wbz0","updated_at":"2022-01-16T04:01:59-05:00","username":"harrisonfitts","name":"Harrison
+        Fitts","first_name":"Harrison","last_name":"Fitts","twitter_username":null,"portfolio_url":"https://harrisonfittsphoto.myportfolio.com/work","bio":"Hi,
+        I''m Harrison. I''m a 20 year old photographer who has a passion for travel.
+        I use my photography as an artistic form of documentation for important moments
+        from my life. Here you will find a wide range of styles and expressions used.
+        Cheers!","location":"Kalamazoo, Michigan","links":{"self":"https://api.unsplash.com/users/harrisonfitts","html":"https://unsplash.com/@harrisonfitts","photos":"https://api.unsplash.com/users/harrisonfitts/photos","likes":"https://api.unsplash.com/users/harrisonfitts/likes","portfolio":"https://api.unsplash.com/users/harrisonfitts/portfolio","following":"https://api.unsplash.com/users/harrisonfitts/following","followers":"https://api.unsplash.com/users/harrisonfitts/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1639698796327-58485533bd62image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1639698796327-58485533bd62image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1639698796327-58485533bd62image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":null,"total_collections":4,"total_likes":22,"total_photos":119,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":null,"portfolio_url":"https://harrisonfittsphoto.myportfolio.com/work","twitter_username":null,"paypal_email":null}},"exif":{"make":"NIKON
+        CORPORATION","model":"NIKON D7500","name":"NIKON CORPORATION, NIKON D7500","exposure_time":"1/100","aperture":"1.8","focal_length":"35.0","iso":100},"location":{"title":"Denver,
+        CO, USA","name":"Denver, CO, USA","city":"Denver","country":"United States","position":{"latitude":39.739236,"longitude":-104.990251}},"views":23492,"downloads":320}'
+  recorded_at: Sun, 16 Jan 2022 19:05:43 GMT
+recorded_with: VCR 6.0.0

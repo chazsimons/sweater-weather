@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=ZHesXhc8C7qYFzqF_h3w5tt2ij4_jgFv4VlIiNGWIlU&orientation=landscape&page=1&per_page=1&query=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1170'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      X-Unsplash-Version:
+      - v1
+      Etag:
+      - W/"27a1997f9eb094a6773885817b5542f7"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Request-Id:
+      - 7a93ab66-236d-4d7f-a3c8-60995daa5bab
+      X-Runtime:
+      - '0.036974'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 16 Jan 2022 19:54:04 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kjyo7100179-IAD, cache-lax10624-LGB
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1642362844.017161,VS0,VE103
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"x6CUBgH-wyQ","created_at":"2021-01-11T20:23:56-05:00","updated_at":"2022-01-15T16:16:35-05:00","promoted_at":null,"width":5568,"height":3712,"color":"#d9d9d9","blur_hash":"LhIqx]xvIUoe~q%MM{RkNc%2WBRj","description":"INSTAGRAM:
+        SARRAMPHOTOGRAPHY","alt_description":"red car on road during daytime","urls":{"raw":"https://images.unsplash.com/photo-1610414290983-00b80ece0017?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1610414290983-00b80ece0017?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1610414290983-00b80ece0017?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1610414290983-00b80ece0017?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1610414290983-00b80ece0017?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/x6CUBgH-wyQ","html":"https://unsplash.com/photos/x6CUBgH-wyQ","download":"https://unsplash.com/photos/x6CUBgH-wyQ/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ","download_location":"https://api.unsplash.com/photos/x6CUBgH-wyQ/download?ixid=MnwyOTE1MTZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIzNjI4NDQ"},"categories":[],"likes":21,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"wallpapers":{"status":"rejected"}},"user":{"id":"7vaZ99fSB5o","updated_at":"2022-01-16T08:47:10-05:00","username":"nima_sarram","name":"Nima
+        Sarram","first_name":"Nima","last_name":"Sarram","twitter_username":null,"portfolio_url":null,"bio":"INSTAGRAM:
+        SARRAMPHOTOGRAPHY\r\nBased out of Denver Colorado","location":"Denver, Co","links":{"self":"https://api.unsplash.com/users/nima_sarram","html":"https://unsplash.com/@nima_sarram","photos":"https://api.unsplash.com/users/nima_sarram/photos","likes":"https://api.unsplash.com/users/nima_sarram/likes","portfolio":"https://api.unsplash.com/users/nima_sarram/portfolio","following":"https://api.unsplash.com/users/nima_sarram/following","followers":"https://api.unsplash.com/users/nima_sarram/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1601953490826-6eeca3f02875image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1601953490826-6eeca3f02875image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1601953490826-6eeca3f02875image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"sarramphotography","total_collections":16,"total_likes":19,"total_photos":353,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"sarramphotography","portfolio_url":null,"twitter_username":null,"paypal_email":null}},"exif":{"make":"NIKON
+        CORPORATION","model":"NIKON D7500","name":"NIKON CORPORATION, NIKON D7500","exposure_time":"1/8000","aperture":"1.4","focal_length":"50.0","iso":125},"location":{"title":"Denver,
+        CO, USA","name":"Denver, CO, USA","city":"Denver","country":"United States","position":{"latitude":39.739236,"longitude":-104.990251}},"views":110870,"downloads":1720}'
+  recorded_at: Sun, 16 Jan 2022 19:54:04 GMT
+recorded_with: VCR 6.0.0

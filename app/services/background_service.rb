@@ -4,10 +4,13 @@ class BackgroundService
     Faraday.new('https://api.unsplash.com/')
   end
 
-  def get_photo(city)
-    conn.get('search/photos') do |req|
-      req.params[:query]     = city
-      req.params[:client_id] = ENV['unsplash_access_key']
+  def self.get_photo(city)
+    conn.get('photos/random') do |req|
+      req.params[:query]       = city
+      req.params[:client_id]   = ENV['unsplash_access_key']
+      req.params[:orientation] = 'landscape'
+      req.params[:page]        = 1
+      req.params[:per_page]    = 1
     end
   end
 end

@@ -13,9 +13,9 @@ class WeatherFacade
     end[0..7]
 
     weather_hash = Hash.new
-    weather_hash[:current] = current
-    weather_hash[:daily] = daily
-    weather_hash[:hourly] = hourly
+    weather_hash[:current_weather] = current
+    weather_hash[:daily_weather] = daily
+    weather_hash[:hourly_weather] = hourly
     weather_hash
   end
 end

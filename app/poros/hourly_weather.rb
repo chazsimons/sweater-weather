@@ -3,7 +3,7 @@ class HourlyWeather
               :tempature,
               :conditions,
               :icon
-              
+
   def initialize(data)
     @time       = Time.at(data[:dt]).to_datetime
     @tempature  = data[:temp]

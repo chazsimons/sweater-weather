@@ -62,5 +62,6 @@ RSpec.describe 'Road Trip' do
     expect(parsed_data).to have_key(:attributes)
     expect(parsed_data[:attributes]).to be_a(Hash)
     expect(parsed_data[:attributes][:travel_time]).to eq('We are unable to route with the given locations.')
+    expect(parsed_data[:attributes][:weather_at_eta].empty?).to eq(true)
   end
 end

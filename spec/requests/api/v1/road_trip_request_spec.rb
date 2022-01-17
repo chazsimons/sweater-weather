@@ -4,6 +4,7 @@ RSpec.describe 'Road Trip' do
   before :each do
     @user = User.create!({ email: 'johndoe123@gmail.com', password: 'password', api_key: '9okGIqb8wPSdqlyOZhw2ngtt' })
   end
+
   it 'calculates travel time and forecast between two locations', :vcr do
     headers = { 'CONTENT_TYPE' => 'application/json' }
     trip_params = { origin: 'Denver,CO', destination: 'Pueblo,CO', api_key: '9okGIqb8wPSdqlyOZhw2ngtt'}
@@ -11,7 +12,7 @@ RSpec.describe 'Road Trip' do
 
     expect(response.status).to eq(200)
     parsed_data = JSON.parse(response.body, symbolize_names: true)[:data]
-    # require "pry"; binding.pry
+
     expect(parsed_data).to have_key(:attributes)
     expect(parsed_data[:attributes]).to be_a(Hash)
     expect(parsed_data[:attributes]).to have_key(:start_city)
@@ -48,5 +49,18 @@ RSpec.describe 'Road Trip' do
     expect(parsed_errors).to have_key(:errors)
     expect(parsed_errors[:errors]).to have_key(:details)
     expect(parsed_errors[:errors][:details]).to eq("Sorry, your credentials are incorrect.")
+  end
+
+  it 'returns an error if the travel time is impossible', :vcr do
+    headers = { 'CONTENT_TYPE' => 'application/json' }
+    trip_params = { origin: 'Denver,CO', destination: 'London', api_key: '9okGIqb8wPSdqlyOZhw2ngtt'}
+    post '/api/v1/road_trip', headers: headers, params: JSON.generate(trip_params)
+
+    expect(response.status).to eq(200)
+    parsed_data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(parsed_data).to have_key(:attributes)
+    expect(parsed_data[:attributes]).to be_a(Hash)
+    expect(parsed_data[:attributes][:travel_time]).to eq('We are unable to route with the given locations.')
   end
 end

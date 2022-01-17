@@ -27,7 +27,7 @@ RSpec.describe 'Logging In' do
     post '/api/v1/sessions', headers: headers, params: JSON.generate(bad_password)
 
     parsed = JSON.parse(response.body, symbolize_names: true)[:errors]
-    expect(response.status).to eq(400)
+    expect(response.status).to eq(401)
     expect(parsed[:details]).to eq('Sorry, your credentials are incorrect.')
   end
 end

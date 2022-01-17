@@ -21,7 +21,7 @@ RSpec.describe 'Users Request' do
 
     parsed = JSON.parse(response.body, symbolize_names: true)[:errors]
 
-    expect(response.status).to eq(400)
+    expect(response.status).to eq(401)
     expect(parsed[:details]).to eq('Your passwords do not match. Please try again.')
   end
 
@@ -35,7 +35,7 @@ RSpec.describe 'Users Request' do
 
     parsed_errors = JSON.parse(response.body, symbolize_names: true)[:errors]
 
-    expect(response.status).to eq(400)
+    expect(response.status).to eq(401)
     expect(parsed_errors[:details][:email][0]).to eq("has already been taken")
   end
 end

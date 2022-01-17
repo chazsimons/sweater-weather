@@ -14,4 +14,8 @@ class Trip
     @lat           = data[:route][:boundingBox][:ul][:lat]
     @lng           = data[:route][:boundingBox][:ul][:lng]
   end
+
+  def travel_possible(data)
+    
+  end
 end

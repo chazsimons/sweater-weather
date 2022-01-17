@@ -12,4 +12,15 @@ class WeatherService
     end
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.get_weather_at_time(lat, lng)
+    response = conn.get('onecall') do |req|
+      req.params[:appid] = ENV['open_weather_api']
+      req.params[:lat] = lat
+      req.params[:lon] = lng
+      req.params[:exclude] = 'current,minutely,daily,alerts'
+      req.params[:units] = 'imperial'
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

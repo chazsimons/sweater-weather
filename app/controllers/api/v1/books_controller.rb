@@ -7,7 +7,8 @@ class Api::V1::BooksController < ApplicationController
                   { id: 'null', type: 'books',
                     attributes: {
                       desination: params[:location],
-                      forecast: { summary: current_weather.conditions,
+                      forecast: {
+                        summary: current_weather.conditions,
                         temperature: current_weather.temp },
                         total_books_found: BooksFacade.get_books_about(params[:location], params[:quantity])[:total_books_found],
                         books: BooksFacade.get_books_about(params[:location], params[:quantity])[:books]}}}

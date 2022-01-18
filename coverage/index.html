@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T15:54:11-08:00">2022-01-18T15:54:11-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T15:55:57-08:00">2022-01-18T15:55:57-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.73
+         7.7
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>49</b> files in total.
+    <b>50</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>634</b> relevant lines,
-    <span class="green"><b>633</b> lines covered</span> and
+    <b>637</b> relevant lines,
+    <span class="green"><b>636</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
   99.84%
@@ -320,6 +320,17 @@
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#7ab5eadd5b3721d574eb5b078f7e5d2d5d83f41d" class="src_link" title="app/serializers/road_trip_serializer.rb">app/serializers/road_trip_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -1115,7 +1126,7 @@
 
             
 
-            <code class="ruby">      render json: { data: { id: &#39;null&#39;, type: &#39;roadtrip&#39;, attributes: RoadTripFacade.time_weather(params[:origin], params[:destination]) } }</code>
+            <code class="ruby">      render json: RoadTripSerializer.serialize(RoadTripFacade.time_weather(params[:origin], params[:destination]))</code>
           </li>
         </div>
       
@@ -4796,6 +4807,103 @@
             
 
             <code class="ruby">    {data: { id: &#39;null&#39;, type: &#39;forecast&#39;, attributes: data}}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="7ab5eadd5b3721d574eb5b078f7e5d2d5d83f41d">
+  <div class="header">
+    <h3>app/serializers/road_trip_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class RoadTripSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.serialize(data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    { data: { id: &#39;null&#39;, type: &#39;roadtrip&#39;, attributes: data } }</code>
           </li>
         </div>
       

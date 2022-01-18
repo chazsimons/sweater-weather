@@ -6,7 +6,7 @@ class Api::V1::UsersController < ApplicationController
       if @user.save
         render json: UserSerializer.new(@user), status: 201
       else
-        render json: {errors: {details: @user.errors }}, status: 401
+        render json: {errors: {details: @user.errors } }, status: 401
       end
     else
       render json: {errors: { details: 'Your passwords do not match. Please try again.'}}, status: 401

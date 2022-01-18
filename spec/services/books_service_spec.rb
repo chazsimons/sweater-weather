@@ -8,7 +8,7 @@ RSpec.describe BooksService do
 
   it 'can find books about a certain subject', :vcr do
     books = BooksService.get_books_about('denver,co', 5)
-
+require "pry"; binding.pry
     expect(books).to have_key(:name)
     expect(books[:name]).to eq('denver')
     expect(books).to have_key(:work_count)

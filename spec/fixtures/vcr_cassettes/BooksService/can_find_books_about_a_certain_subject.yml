@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openlibrary.org/subjects/denver.json?limit=5
+    uri: https://openlibrary.org/search.json?limit=5&q=denver
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Tue, 18 Jan 2022 16:40:51 GMT
+      - Tue, 18 Jan 2022 18:19:49 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,72 +35,539 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"MC 3 0.003 SR 1 0.000 TT 0 10.052"'
+      - '"SR 1 0.142 TT 0 0.144"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
       encoding: UTF-8
-      string: '{"key": "/subjects/denver", "name": "denver", "subject_type": "subject",
-        "work_count": 20, "works": [{"key": "/works/OL1439708W", "title": "The revolt
-        of modern youth", "edition_count": 3, "cover_id": null, "subject": ["Juvenile
-        delinquency", "Sexual ethics", "Denver", "Denver. Juvenile Court of the City
-        and County of Denver", "Denver (Colo). Juvenile Court of the City and County
-        of Denver", "Denver (Colo)"], "ia_collection": [], "lendinglibrary": false,
-        "printdisabled": false, "lending_edition": "", "lending_identifier": "", "authors":
-        [{"key": "/authors/OL150590A", "name": "Ben B. Lindsey"}], "first_publish_year":
-        null, "ia": null, "public_scan": false, "has_fulltext": false}, {"key": "/works/OL9897019W",
-        "title": "Boldfaced Lies", "edition_count": 3, "cover_id": 6480927, "cover_edition_key":
-        "OL12340667M", "subject": ["Passing (Identity)", "Colorado", "Ku Klux Klan
-        (1915- )", "Denver", "Fiction", "Accessible book", "Protected DAISY"], "ia_collection":
-        ["internetarchivebooks", "fav-shiro_nakatomi", "inlibrary", "printdisabled",
-        "smithsonianlibraries", "americana"], "lendinglibrary": false, "printdisabled":
-        true, "lending_edition": "OL12340667M", "lending_identifier": "boldfacedliesnov00port",
-        "authors": [{"key": "/authors/OL3879032A", "name": "Charlene A. Porter"}],
-        "first_publish_year": null, "ia": "boldfacedliesnov00port", "public_scan":
-        false, "has_fulltext": true, "availability": {"status": "borrow_available",
-        "available_to_browse": true, "available_to_borrow": false, "available_to_waitlist":
-        false, "is_printdisabled": true, "is_readable": false, "is_lendable": true,
-        "identifier": "boldfacedliesnov00port", "isbn": "1934099112", "oclc": null,
-        "openlibrary_work": "OL9897019W", "openlibrary_edition": "OL12340667M", "last_loan_date":
-        null, "num_waitlist": null, "last_waitlist_date": null, "collection": "inlibrary,printdisabled,internetarchivebooks,americana,fav-shiro_nakatomi,smithsonianlibraries",
-        "is_restricted": true, "is_browseable": false, "__src__": "core.models.lending.get_availability"}},
-        {"key": "/works/OL2766605W", "title": "The Regis santos", "edition_count":
-        3, "cover_id": 1694386, "cover_edition_key": "OL708367M", "subject": ["Catalogs",
-        "Folk art", "Santos (Art)", "Art collections", "Regis University (Denver,
-        Colo.)", "Ethnic studies", "Exhibition catalogues and specific collections",
-        "History Of Art / Art & Design Styles", "Museum, historic sites, gallery &
-        art guides", "Hispanic Art", "Colorado", "Permanent Collection Catalogs",
-        "Art", "Art & Art Instruction", "Collections, Catalogs, Exhibitions - General",
-        "Folk & Outsider Art", "Criticism", "Subjects & Themes - General", "New Mexico",
-        "Denver", "Hispanic american art"], "ia_collection": [], "lendinglibrary":
-        false, "printdisabled": false, "lending_edition": "", "lending_identifier":
-        "", "authors": [{"key": "/authors/OL406949A", "name": "Thomas J. Steele"},
-        {"key": "/authors/OL407128A", "name": "Barbe Awalt"}, {"key": "/authors/OL1240313A",
-        "name": "Paul Fisher Rhetts"}], "first_publish_year": null, "ia": null, "public_scan":
-        false, "has_fulltext": false}, {"key": "/works/OL1439707W", "title": "The
-        dangerous life", "edition_count": 2, "cover_id": null, "subject": ["Child
-        welfare", "Denver", "Denver. Juvenile Court of the City and County of Denver"],
-        "ia_collection": [], "lendinglibrary": false, "printdisabled": false, "lending_edition":
-        "", "lending_identifier": "", "authors": [{"key": "/authors/OL150590A", "name":
-        "Ben B. Lindsey"}], "first_publish_year": null, "ia": null, "public_scan":
-        false, "has_fulltext": false}, {"key": "/works/OL3404420W", "title": "Exotic
-        and irrational", "edition_count": 2, "cover_id": 740871, "cover_edition_key":
-        "OL8584347M", "subject": ["Opera", "Social life and customs", "Genres & Styles
-        - Opera", "History & Criticism - General", "Music / History & Criticism",
-        "Music-Genres & Styles - Opera", "Music/Songbooks", "Music", "Colorado", "Denver",
-        "Denver (Colo.)", "Accessible book", "Protected DAISY"], "ia_collection":
-        ["fav-perfect_wagnerite", "internetarchivebooks", "inlibrary", "printdisabled"],
-        "lendinglibrary": false, "printdisabled": true, "lending_edition": "OL22750683M",
-        "lending_identifier": "exoticirrational0000youn", "authors": [{"key": "/authors/OL558147A",
-        "name": "Young, Allen"}, {"key": "/authors/OL1175532A", "name": "Allen Young"}],
-        "first_publish_year": null, "ia": "exoticirrational0000youn", "public_scan":
-        false, "has_fulltext": true, "availability": {"status": "borrow_available",
-        "available_to_browse": true, "available_to_borrow": false, "available_to_waitlist":
-        false, "is_printdisabled": true, "is_readable": false, "is_lendable": true,
-        "identifier": "exoticirrational0000youn", "isbn": "0974959782", "oclc": null,
-        "openlibrary_work": "OL3404420W", "openlibrary_edition": "OL22750683M", "last_loan_date":
-        null, "num_waitlist": null, "last_waitlist_date": null, "collection": "inlibrary,printdisabled,internetarchivebooks,fav-perfect_wagnerite",
-        "is_restricted": true, "is_browseable": false, "__src__": "core.models.lending.get_availability"}}],
-        "ebook_count": 20}'
-  recorded_at: Tue, 18 Jan 2022 16:40:51 GMT
+      string: |-
+        {
+            "numFound": 8480,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8286499W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL2482594M",
+                        "/books/OL7703796M",
+                        "/books/OL7681452M",
+                        "/works/OL8286499W",
+                        "/subjects/buildings_structures",
+                        "/subjects/pictorial_works",
+                        "/authors/OL2754228A"
+                    ],
+                    "title": "Denver",
+                    "title_suggest": "Denver",
+                    "has_fulltext": false,
+                    "edition_count": 3,
+                    "edition_key": [
+                        "OL2482594M",
+                        "OL7703796M",
+                        "OL7681452M"
+                    ],
+                    "publish_date": [
+                        "1987",
+                        "December 12, 1988",
+                        "August 27, 1987"
+                    ],
+                    "publish_year": [
+                        1987,
+                        1988
+                    ],
+                    "first_publish_year": 1987,
+                    "number_of_pages_median": 64,
+                    "lccn": [
+                        "87403040"
+                    ],
+                    "publish_place": [
+                        "New York"
+                    ],
+                    "contributor": [
+                        "Crescent Books."
+                    ],
+                    "lcc": [
+                        "F--0784.00000000.D443 D46 1987"
+                    ],
+                    "ddc": [
+                        "978.883033"
+                    ],
+                    "isbn": [
+                        "0517215039",
+                        "9780517623619",
+                        "9780517215036",
+                        "0517623617"
+                    ],
+                    "last_modified_i": 1604743091,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Crescent Books",
+                        "Random House Value Publishing",
+                        "Distributed by Crown Publishers",
+                        "Crescent"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2754228A"
+                    ],
+                    "author_name": [
+                        "RH Value Publishing"
+                    ],
+                    "author_alternative_name": [
+                        "Rh Value Publishing",
+                        "Random House Value Publishing",
+                        "Value Publishing Rh",
+                        "Value Publ Rh"
+                    ],
+                    "subject": [
+                        "Buildings, structures",
+                        "Pictorial works"
+                    ],
+                    "id_goodreads": [
+                        "3962328"
+                    ],
+                    "publisher_facet": [
+                        "Crescent",
+                        "Crescent Books",
+                        "Distributed by Crown Publishers",
+                        "Random House Value Publishing"
+                    ],
+                    "subject_facet": [
+                        "Buildings, structures",
+                        "Pictorial works"
+                    ],
+                    "_version_": 1715096654852390912,
+                    "lcc_sort": "F--0784.00000000.D443 D46 1987",
+                    "author_facet": [
+                        "OL2754228A RH Value Publishing"
+                    ],
+                    "subject_key": [
+                        "buildings_structures",
+                        "pictorial_works"
+                    ],
+                    "ddc_sort": "978.883033"
+                },
+                {
+                    "key": "/works/OL15398061W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL12131346M",
+                        "/books/OL24374123M",
+                        "/works/OL15398061W",
+                        "/subjects/guidebooks",
+                        "/subjects/travel_&_holiday_guides",
+                        "/subjects/travel",
+                        "/subjects/travel_-_united_states",
+                        "/subjects/usa",
+                        "/subjects/united_states_-_general",
+                        "/subjects/united_states_-_mountain_-_colorado",
+                        "/subjects/united_states_-_west_-_mountain_(general)",
+                        "/subjects/denver_(colo.)_description_and_travel",
+                        "/subjects/place:denver_(colo.)",
+                        "/subjects/place:colorado",
+                        "/authors/OL6830004A",
+                        "/authors/OL3824820A",
+                        "/authors/OL3261605A",
+                        "/authors/OL3824821A"
+                    ],
+                    "title": "Denver",
+                    "title_suggest": "Denver",
+                    "has_fulltext": true,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL12131346M",
+                        "OL24374123M"
+                    ],
+                    "publish_date": [
+                        "October 1996",
+                        "1997"
+                    ],
+                    "publish_year": [
+                        1996,
+                        1997
+                    ],
+                    "first_publish_year": 1996,
+                    "number_of_pages_median": 252,
+                    "publish_place": [
+                        "Santa Fe, N.M"
+                    ],
+                    "oclc": [
+                        "36834619"
+                    ],
+                    "contributor": [
+                        "Garnsey, Hilary",
+                        "Wagner, Kyle"
+                    ],
+                    "lcc": [
+                        "F--0784.00000000.D43 G37"
+                    ],
+                    "ddc": [
+                        "917.8883"
+                    ],
+                    "isbn": [
+                        "1562613006",
+                        "9781562613006"
+                    ],
+                    "last_modified_i": 1633423391,
+                    "ebook_count_i": 1,
+                    "ia": [
+                        "denvergarn00garn"
+                    ],
+                    "public_scan_b": false,
+                    "ia_collection_s": "printdisabled;internetarchivebooks;inlibrary;americana",
+                    "lending_edition_s": "OL24374123M",
+                    "lending_identifier_s": "denvergarn00garn",
+                    "printdisabled_s": "OL24374123M",
+                    "cover_edition_key": "OL12131346M",
+                    "cover_i": 5175412,
+                    "publisher": [
+                        "John Muir Pubns",
+                        "John Muir Publications"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL6830004A",
+                        "OL3824820A",
+                        "OL3261605A",
+                        "OL3824821A"
+                    ],
+                    "author_name": [
+                        "Georgia Garnsey",
+                        "Georgi Garnsey",
+                        "Hilary Garnsey",
+                        "Kyle Wagner"
+                    ],
+                    "place": [
+                        "Denver (Colo.)",
+                        "Colorado"
+                    ],
+                    "subject": [
+                        "Guidebooks",
+                        "Travel & holiday guides",
+                        "Travel",
+                        "Travel - United States",
+                        "USA",
+                        "United States - General",
+                        "United States - Mountain - Colorado",
+                        "United States - West - Mountain (General)",
+                        "Denver (colo.), description and travel",
+                        "Accessible book",
+                        "Protected DAISY"
+                    ],
+                    "id_goodreads": [
+                        "3221142"
+                    ],
+                    "id_librarything": [
+                        "5828382"
+                    ],
+                    "ia_box_id": [
+                        "IA123720"
+                    ],
+                    "publisher_facet": [
+                        "John Muir Publications",
+                        "John Muir Pubns"
+                    ],
+                    "place_key": [
+                        "colorado",
+                        "denver_(colo.)"
+                    ],
+                    "subject_facet": [
+                        "Accessible book",
+                        "Denver (colo.), description and travel",
+                        "Guidebooks",
+                        "Protected DAISY",
+                        "Travel",
+                        "Travel & holiday guides",
+                        "Travel - United States",
+                        "USA",
+                        "United States - General",
+                        "United States - Mountain - Colorado",
+                        "United States - West - Mountain (General)"
+                    ],
+                    "_version_": 1715078150296174596,
+                    "place_facet": [
+                        "Colorado",
+                        "Denver (Colo.)"
+                    ],
+                    "lcc_sort": "F--0784.00000000.D43 G37",
+                    "author_facet": [
+                        "OL3261605A Hilary Garnsey",
+                        "OL3824820A Georgi Garnsey",
+                        "OL3824821A Kyle Wagner",
+                        "OL6830004A Georgia Garnsey"
+                    ],
+                    "subject_key": [
+                        "accessible_book",
+                        "denver_(colo.)_description_and_travel",
+                        "guidebooks",
+                        "protected_daisy",
+                        "travel",
+                        "travel_-_united_states",
+                        "travel__holiday_guides",
+                        "united_states_-_general",
+                        "united_states_-_mountain_-_colorado",
+                        "united_states_-_west_-_mountain_(general)",
+                        "usa"
+                    ],
+                    "ddc_sort": "917.8883"
+                },
+                {
+                    "key": "/works/OL15007292W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL4900097M",
+                        "/books/OL24068285M",
+                        "/works/OL15007292W",
+                        "/subjects/artistic_photography",
+                        "/subjects/pictorial_works",
+                        "/subjects/denver_(colo.)_description_and_travel",
+                        "/subjects/photography_artistic",
+                        "/subjects/place:denver_region_(colo.)",
+                        "/subjects/place:denver_(colo.)",
+                        "/authors/OL25655A"
+                    ],
+                    "title": "Denver",
+                    "title_suggest": "Denver",
+                    "has_fulltext": false,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL4900097M",
+                        "OL24068285M"
+                    ],
+                    "publish_date": [
+                        "1977",
+                        "2009"
+                    ],
+                    "publish_year": [
+                        1977,
+                        2009
+                    ],
+                    "first_publish_year": 1977,
+                    "number_of_pages_median": 119,
+                    "lccn": [
+                        "2009921881",
+                        "76044035"
+                    ],
+                    "publish_place": [
+                        "New Haven",
+                        "[Denver]"
+                    ],
+                    "lcc": [
+                        "F--0784.00000000.D443 A3 1977",
+                        "F--0784.00000000.D443",
+                        "F--0784.00000000.D443 A3 2009"
+                    ],
+                    "ddc": [
+                        "779.9978883"
+                    ],
+                    "isbn": [
+                        "0870811010",
+                        "0870811029",
+                        "9780870811012",
+                        "9780300141368",
+                        "9780870811029",
+                        "030014136X"
+                    ],
+                    "last_modified_i": 1605246641,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Yale University Art Gallery",
+                        "State Historical Society of Colorado",
+                        "Distributed by Yale University Press",
+                        "Colorado Associated University Press"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL25655A"
+                    ],
+                    "author_name": [
+                        "Robert Adams"
+                    ],
+                    "place": [
+                        "Denver Region (Colo.)",
+                        "Denver (Colo.)"
+                    ],
+                    "subject": [
+                        "Artistic Photography",
+                        "Pictorial works",
+                        "Denver (colo.), description and travel",
+                        "Photography, artistic"
+                    ],
+                    "id_librarything": [
+                        "4207948"
+                    ],
+                    "publisher_facet": [
+                        "Colorado Associated University Press",
+                        "Distributed by Yale University Press",
+                        "State Historical Society of Colorado",
+                        "Yale University Art Gallery"
+                    ],
+                    "place_key": [
+                        "denver_(colo.)",
+                        "denver_region_(colo.)"
+                    ],
+                    "subject_facet": [
+                        "Artistic Photography",
+                        "Denver (colo.), description and travel",
+                        "Photography, artistic",
+                        "Pictorial works"
+                    ],
+                    "_version_": 1715077698146009088,
+                    "place_facet": [
+                        "Denver (Colo.)",
+                        "Denver Region (Colo.)"
+                    ],
+                    "lcc_sort": "F--0784.00000000.D443 A3 1977",
+                    "author_facet": [
+                        "OL25655A Robert Adams"
+                    ],
+                    "subject_key": [
+                        "artistic_photography",
+                        "denver_(colo.)_description_and_travel",
+                        "photography_artistic",
+                        "pictorial_works"
+                    ],
+                    "ddc_sort": "779.9978883"
+                },
+                {
+                    "key": "/works/OL8688133W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8346277M",
+                        "/books/OL8346276M",
+                        "/works/OL8688133W",
+                        "/authors/OL2937897A"
+                    ],
+                    "title": "Denver",
+                    "title_suggest": "Denver",
+                    "has_fulltext": false,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL8346277M",
+                        "OL8346276M"
+                    ],
+                    "publish_date": [
+                        "November 1985",
+                        "December 1986"
+                    ],
+                    "publish_year": [
+                        1986,
+                        1985
+                    ],
+                    "first_publish_year": 1985,
+                    "number_of_pages_median": 352,
+                    "oclc": [
+                        "12949663"
+                    ],
+                    "contributor": [
+                        "Kenton Forrest (Photographer)"
+                    ],
+                    "isbn": [
+                        "0871087146",
+                        "9780871087140",
+                        "0871086999",
+                        "9780871086990"
+                    ],
+                    "last_modified_i": 1303927657,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Pruett Pub Co",
+                        "Pruett Publishing Company"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2937897A"
+                    ],
+                    "author_name": [
+                        "William C. Jones"
+                    ],
+                    "id_goodreads": [
+                        "3707760",
+                        "2798940"
+                    ],
+                    "id_librarything": [
+                        "2800698"
+                    ],
+                    "publisher_facet": [
+                        "Pruett Pub Co",
+                        "Pruett Publishing Company"
+                    ],
+                    "_version_": 1715097155037822977,
+                    "author_facet": [
+                        "OL2937897A William C. Jones"
+                    ]
+                },
+                {
+                    "key": "/works/OL8688124W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8346242M",
+                        "/books/OL8346240M",
+                        "/works/OL8688124W",
+                        "/authors/OL2937889A"
+                    ],
+                    "title": "Denver;",
+                    "title_suggest": "Denver;",
+                    "has_fulltext": false,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL8346242M",
+                        "OL8346240M"
+                    ],
+                    "publish_date": [
+                        "1973"
+                    ],
+                    "publish_year": [
+                        1973
+                    ],
+                    "first_publish_year": 1973,
+                    "oclc": [
+                        "897429"
+                    ],
+                    "isbn": [
+                        "9780871080608",
+                        "0871080648",
+                        "9780871080646",
+                        "0871080605"
+                    ],
+                    "last_modified_i": 1307520812,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Pruett Pub. Co"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2937889A"
+                    ],
+                    "author_name": [
+                        "William C Jones"
+                    ],
+                    "id_goodreads": [
+                        "4014416"
+                    ],
+                    "publisher_facet": [
+                        "Pruett Pub. Co"
+                    ],
+                    "_version_": 1715097155179380737,
+                    "author_facet": [
+                        "OL2937889A William C Jones"
+                    ]
+                }
+            ],
+            "num_found": 8480,
+            "q": "denver",
+            "offset": null
+        }
+  recorded_at: Tue, 18 Jan 2022 18:19:49 GMT
 recorded_with: VCR 6.0.0

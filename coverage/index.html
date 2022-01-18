@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T15:52:08-08:00">2022-01-18T15:52:08-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T15:54:11-08:00">2022-01-18T15:54:11-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.76
+         7.73
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>48</b> files in total.
+    <b>49</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>631</b> relevant lines,
-    <span class="green"><b>630</b> lines covered</span> and
+    <b>634</b> relevant lines,
+    <span class="green"><b>633</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
   99.84%
@@ -298,6 +298,17 @@
             <td class="cell--number">14</td>
             <td class="cell--number">0</td>
             <td class="cell--number">5.21</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#463f530b49fc8bfd8bd2aca6e252ffc7af21a496" class="src_link" title="app/serializers/background_serializer.rb">app/serializers/background_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.33</td>
             
           </tr>
         
@@ -681,7 +692,7 @@
 
             
 
-            <code class="ruby">    render json: {data: { id: &#39;null&#39;, type: &#39;image&#39;, attributes: {  image: BackgroundsFacade.get_photo(params[:location]) }}}</code>
+            <code class="ruby">    render json: BackgroundSerializer.serialize(BackgroundsFacade.get_photo(params[:location]))</code>
           </li>
         </div>
       
@@ -4607,6 +4618,103 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="463f530b49fc8bfd8bd2aca6e252ffc7af21a496">
+  <div class="header">
+    <h3>app/serializers/background_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class BackgroundSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.serialize(data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    {data: { id: &#39;null&#39;, type: &#39;image&#39;, attributes: {  image: data }}}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 

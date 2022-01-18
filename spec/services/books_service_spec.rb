@@ -8,18 +8,20 @@ RSpec.describe BooksService do
 
   it 'can find books about a certain subject', :vcr do
     books = BooksService.get_books_about('denver,co', 5)
-require "pry"; binding.pry
-    expect(books).to have_key(:name)
-    expect(books[:name]).to eq('denver')
-    expect(books).to have_key(:work_count)
-    expect(books[:work_count]).to be_a(Integer)
-    expect(books).to have_key(:works)
-    expect(books[:works]).to be_a(Array)
+    
+    books[:docs].each do |doc|
+      expect(doc).to have_key(:title)
+      expect(doc[:title]).to be_a(String)
+      expect(doc).to have_key(:isbn)
+      expect(doc[:isbn]).to be_a(Array)
+      expect(doc).to have_key(:publisher)
+      expect(doc[:publisher]).to be_a(Array)
+    end
   end
 
   it 'only returns the specified quantity of books', :vcr do
     books = BooksService.get_books_about('denver,co', 5)
 
-    expect(books[:works].count).to eq(5)
+    expect(books[:docs].count).to eq(5)
   end
 end

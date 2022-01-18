@@ -1092,6 +1092,16 @@
           null
         ]
       },
+      "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/chazsimons/turing/3mod/projects/whether_sweater/sweater_whether/app/controllers/api/v1/road_trip_controller.rb": {
         "lines": [
           1,
@@ -1168,6 +1178,6 @@
         ]
       }
     },
-    "timestamp": 1642539032
+    "timestamp": 1642549928
   }
 }

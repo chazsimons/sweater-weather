@@ -164,7 +164,7 @@ Example response:
 #### 4. User Login
 
 ```ruby
-   POST users
+   POST sessions
    {
   "email": "whatever@example.com",
   "password": "password"

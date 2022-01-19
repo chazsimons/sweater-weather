@@ -9,7 +9,7 @@ class RoadTripFacade
 
       weather_at_eta = {}
 
-      if trip.time_in_hrs < 0
+      if (trip.time_in_hrs - 1) < 0
         weather_at_time = hourly_weather[0]
       else
         weather_at_time = hourly_weather[(trip.time_in_hrs - 1)]

@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=1&q=las%20vegas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Wed, 19 Jan 2022 00:29:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.134 TT 0 0.135"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 8729,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL20171864W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL27355018M",
+                        "/works/OL20171864W",
+                        "/authors/OL7642214A"
+                    ],
+                    "title": "Born to Glory",
+                    "title_suggest": "Born to Glory",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL27355018M"
+                    ],
+                    "publish_date": [
+                        "Jul 10, 2018"
+                    ],
+                    "publish_year": [
+                        2018
+                    ],
+                    "first_publish_year": 2018,
+                    "number_of_pages_median": 128,
+                    "isbn": [
+                        "1629375594",
+                        "9781629375595"
+                    ],
+                    "last_modified_i": 1570320569,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL27355018M",
+                    "cover_i": 8818493,
+                    "publisher": [
+                        "Triumph Books"
+                    ],
+                    "author_key": [
+                        "OL7642214A"
+                    ],
+                    "author_name": [
+                        "Las Vegas Sun"
+                    ],
+                    "id_amazon": [
+                        "1629375594"
+                    ],
+                    "publisher_facet": [
+                        "Triumph Books"
+                    ],
+                    "_version_": 1715083805724770305,
+                    "author_facet": [
+                        "OL7642214A Las Vegas Sun"
+                    ]
+                }
+            ],
+            "num_found": 8729,
+            "q": "las vegas",
+            "offset": null
+        }
+  recorded_at: Wed, 19 Jan 2022 00:29:51 GMT
+recorded_with: VCR 6.0.0

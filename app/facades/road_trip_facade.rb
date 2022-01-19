@@ -1,8 +1,6 @@
 class RoadTripFacade
 
   def self.time_weather(origin, destination)
-    # Rails.cache.fetch('road_trip', :expires => 1.hour) do
-
       route = MapquestService.route(origin, destination)
       trip = Trip.new(origin, destination, route)
       hourly_weather = WeatherService.get_weather_at_time(trip.lat, trip.lng)[:hourly]
@@ -28,6 +26,5 @@ class RoadTripFacade
         trip_hash[:weather_at_eta]   = weather_at_eta
       end
       trip_hash
-    # end
   end
 end

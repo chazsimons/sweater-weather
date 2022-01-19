@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T16:29:51-08:00">2022-01-18T16:29:51-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T17:34:40-08:00">2022-01-18T17:34:40-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -150,7 +150,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3d954fd5a9e6c2578d0481296cc16964b0a389a6" class="src_link" title="app/facades/backgrounds_facade.rb">app/facades/backgrounds_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -172,7 +172,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1ba2c3911528ff91b3d86d8baa8199859e5bd5d8" class="src_link" title="app/facades/mapquest_facade.rb">app/facades/mapquest_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
@@ -183,7 +183,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c43356eb171b834167d0e9cf9b5f2f1b89c1f222" class="src_link" title="app/facades/road_trip_facade.rb">app/facades/road_trip_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">30</td>
+            <td class="cell--number">29</td>
             <td class="cell--number">19</td>
             <td class="cell--number">19</td>
             <td class="cell--number">0</td>
@@ -194,7 +194,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c278da455f90242f1ef26b9e366477a8b09bc55a" class="src_link" title="app/facades/weather_facade.rb">app/facades/weather_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">23</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
@@ -1794,13 +1794,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
             
 
-            <code class="ruby">    # Rails.cache.fetch(&#39;background&#39;, :expires =&gt; 1.hour) do</code>
+            
+
+            <code class="ruby">    response = BackgroundService.get_photo(city)</code>
           </li>
         </div>
       
@@ -1811,34 +1811,12 @@
 
             
 
-            <code class="ruby">      response = BackgroundService.get_photo(city)</code>
+            <code class="ruby">    Background.new(JSON.parse(response.body, symbolize_names: true))</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="6">
-            <span class="hits">5</span>
-            
-
-            
-
-            <code class="ruby">      Background.new(JSON.parse(response.body, symbolize_names: true))</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">    # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -1849,7 +1827,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -2087,13 +2065,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
+          <li class="covered" data-hits="6" data-linenumber="4">
+            <span class="hits">6</span>
             
 
-            <code class="ruby">    # Rails.cache.fetch(&#39;mapquest&#39;, :expires =&gt; 1.hour) do</code>
+            
+
+            <code class="ruby">    latLng = MapquestService.location(city)</code>
           </li>
         </div>
       
@@ -2104,7 +2082,7 @@
 
             
 
-            <code class="ruby">      latLng = MapquestService.location(city)</code>
+            <code class="ruby">    latLng[:results].map do |place|</code>
           </li>
         </div>
       
@@ -2115,18 +2093,18 @@
 
             
 
-            <code class="ruby">      latLng[:results].map do |place|</code>
+            <code class="ruby">      Location.new(place[:locations].first)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="7">
-            <span class="hits">6</span>
+          <li class="never" data-hits="" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">        Location.new(place[:locations].first)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -2137,34 +2115,12 @@
 
             
 
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">    # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -2217,18 +2173,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
+          <li class="covered" data-hits="1" data-linenumber="2">
             <span class="hits">1</span>
             
 
@@ -2239,13 +2184,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="6" data-linenumber="3">
+            <span class="hits">6</span>
+            
+
+            
+
+            <code class="ruby">    route = MapquestService.route(origin, destination)</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="6" data-linenumber="4">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      route = MapquestService.route(origin, destination)</code>
+            <code class="ruby">    trip = Trip.new(origin, destination, route)</code>
           </li>
         </div>
       
@@ -2256,23 +2212,12 @@
 
             
 
-            <code class="ruby">      trip = Trip.new(origin, destination, route)</code>
+            <code class="ruby">    hourly_weather = WeatherService.get_weather_at_time(trip.lat, trip.lng)[:hourly]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="6">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      hourly_weather = WeatherService.get_weather_at_time(trip.lat, trip.lng)[:hourly]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -2283,18 +2228,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="8">
+          <li class="covered" data-hits="6" data-linenumber="7">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      weather_at_eta = {}</code>
+            <code class="ruby">    weather_at_eta = {}</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -2305,46 +2250,57 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="10">
+          <li class="covered" data-hits="6" data-linenumber="9">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (trip.time_in_hrs - 1) &lt; 0</code>
+            <code class="ruby">    if (trip.time_in_hrs - 1) &lt; 0</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        weather_at_time = hourly_weather[0]</code>
+            <code class="ruby">      weather_at_time = hourly_weather[0]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="13">
+          <li class="covered" data-hits="5" data-linenumber="12">
             <span class="hits">5</span>
             
 
             
 
-            <code class="ruby">        weather_at_time = hourly_weather[(trip.time_in_hrs - 1)]</code>
+            <code class="ruby">      weather_at_time = hourly_weather[(trip.time_in_hrs - 1)]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -2355,18 +2311,18 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="6" data-linenumber="15">
+            <span class="hits">6</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    trip_hash = {}</code>
           </li>
         </div>
       
@@ -2377,7 +2333,7 @@
 
             
 
-            <code class="ruby">      trip_hash = {}</code>
+            <code class="ruby">    trip_hash[:start_city]       = origin</code>
           </li>
         </div>
       
@@ -2388,7 +2344,7 @@
 
             
 
-            <code class="ruby">      trip_hash[:start_city]       = origin</code>
+            <code class="ruby">    trip_hash[:end_city]         = destination</code>
           </li>
         </div>
       
@@ -2399,23 +2355,12 @@
 
             
 
-            <code class="ruby">      trip_hash[:end_city]         = destination</code>
+            <code class="ruby">    trip_hash[:travel_time]      = trip.travel_time</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="19">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      trip_hash[:travel_time]      = trip.travel_time</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -2426,13 +2371,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="21">
+          <li class="covered" data-hits="6" data-linenumber="20">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if trip.time_in_hrs != 1000</code>
+            <code class="ruby">    if trip.time_in_hrs != 1000</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="21">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      weather_at_eta[:temp_at_eta] = weather_at_time[:temp]</code>
           </li>
         </div>
       
@@ -2443,7 +2399,7 @@
 
             
 
-            <code class="ruby">        weather_at_eta[:temp_at_eta] = weather_at_time[:temp]</code>
+            <code class="ruby">      weather_at_eta[:conditions]  = weather_at_time[:weather][0][:description]</code>
           </li>
         </div>
       
@@ -2454,67 +2410,56 @@
 
             
 
-            <code class="ruby">        weather_at_eta[:conditions]  = weather_at_time[:weather][0][:description]</code>
+            <code class="ruby">      trip_hash[:weather_at_eta]   = weather_at_eta</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="24">
-            <span class="hits">5</span>
+          <li class="never" data-hits="" data-linenumber="24">
+            
             
 
             
 
-            <code class="ruby">        trip_hash[:weather_at_eta]   = weather_at_eta</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">      else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="25">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">        trip_hash[:weather_at_eta]   = weather_at_eta</code>
+            <code class="ruby">      trip_hash[:weather_at_eta]   = weather_at_eta</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="28">
+          <li class="covered" data-hits="6" data-linenumber="27">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      trip_hash</code>
+            <code class="ruby">    trip_hash</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -2525,7 +2470,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -2589,29 +2534,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby">    # Rails.cache.fetch(&#39;weather&#39;, :expires =&gt; 1.hour) do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="11" data-linenumber="4">
+          <li class="covered" data-hits="11" data-linenumber="3">
             <span class="hits">11</span>
             
 
             
 
-            <code class="ruby">      weather = WeatherService.get_weather(lat, lng)</code>
+            <code class="ruby">    weather = WeatherService.get_weather(lat, lng)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -2622,18 +2556,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="6">
+          <li class="covered" data-hits="11" data-linenumber="5">
             <span class="hits">11</span>
             
 
             
 
-            <code class="ruby">      current = CurrentWeather.new(weather[:current])</code>
+            <code class="ruby">    current = CurrentWeather.new(weather[:current])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -2644,24 +2578,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="8">
+          <li class="covered" data-hits="11" data-linenumber="7">
             <span class="hits">11</span>
             
 
             
 
-            <code class="ruby">      daily = weather[:daily].map do |day|</code>
+            <code class="ruby">    daily = weather[:daily].map do |day|</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="88" data-linenumber="9">
+          <li class="covered" data-hits="88" data-linenumber="8">
             <span class="hits">88</span>
             
 
             
 
-            <code class="ruby">        DailyWeather.new(day)</code>
+            <code class="ruby">      DailyWeather.new(day)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    end[0..4]</code>
           </li>
         </div>
       
@@ -2672,40 +2617,40 @@
 
             
 
-            <code class="ruby">      end[0..4]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="12">
+          <li class="covered" data-hits="11" data-linenumber="11">
             <span class="hits">11</span>
             
 
             
 
-            <code class="ruby">      hourly = weather[:hourly].map do |hour|</code>
+            <code class="ruby">    hourly = weather[:hourly].map do |hour|</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="528" data-linenumber="13">
+          <li class="covered" data-hits="528" data-linenumber="12">
             <span class="hits">528</span>
             
 
             
 
-            <code class="ruby">        HourlyWeather.new(hour)</code>
+            <code class="ruby">      HourlyWeather.new(hour)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end[0..7]</code>
           </li>
         </div>
       
@@ -2716,18 +2661,18 @@
 
             
 
-            <code class="ruby">      end[0..7]</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="11" data-linenumber="15">
+            <span class="hits">11</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    weather_hash = Hash.new</code>
           </li>
         </div>
       
@@ -2738,7 +2683,7 @@
 
             
 
-            <code class="ruby">      weather_hash = Hash.new</code>
+            <code class="ruby">    weather_hash[:current_weather] = current</code>
           </li>
         </div>
       
@@ -2749,7 +2694,7 @@
 
             
 
-            <code class="ruby">      weather_hash[:current_weather] = current</code>
+            <code class="ruby">    weather_hash[:daily_weather] = daily</code>
           </li>
         </div>
       
@@ -2760,7 +2705,7 @@
 
             
 
-            <code class="ruby">      weather_hash[:daily_weather] = daily</code>
+            <code class="ruby">    weather_hash[:hourly_weather] = hourly</code>
           </li>
         </div>
       
@@ -2771,34 +2716,12 @@
 
             
 
-            <code class="ruby">      weather_hash[:hourly_weather] = hourly</code>
+            <code class="ruby">    weather_hash</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="20">
-            <span class="hits">11</span>
-            
-
-            
-
-            <code class="ruby">      weather_hash</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">    # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -2809,7 +2732,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 

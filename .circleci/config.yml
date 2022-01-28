@@ -89,9 +89,6 @@ orbs:
 #             - build   # Finally, run the build job.
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
-  machine:
-  environment:
-    DBUS_SESSION_BUS_ADDRESS: /dev/null
     parallelism: 1 # run three instances of this job in parallel
     docker: # run the steps with Docker
       - image: circleci/ruby:2.7.2 # ...with this image as the primary container; this is where all `steps` will run

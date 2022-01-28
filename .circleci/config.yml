@@ -137,6 +137,6 @@ jobs: # a collection of steps
           name: Database setup
           command: bin/rails db:schema:load --trace
       - run:
-          name: Run rspec in parallel
+          name: Run rspec
           command: |
             bundle exec rspec

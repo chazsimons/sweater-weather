@@ -18,7 +18,6 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
-      - checkout # pull down our git code.
       - ruby/install-deps # use the ruby orb to install dependencies
       # use the node orb to install our packages
       # specifying that we use `yarn` and to cache dependencies with `yarn.lock`
@@ -59,7 +58,6 @@ jobs:
       RAILS_ENV: test
     # A series of steps to run, some are similar to those in "build".
     steps:
-      - checkout
       - ruby/install-deps
       - node/install-packages:
           pkg-manager: yarn
